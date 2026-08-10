@@ -1,5 +1,6 @@
+import 'package:first_flutter_project/features/shopping/shopping_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:first_flutter_project/features/home/home_screen.dart';
+// import 'package:first_flutter_project/features/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Suwannaphum'),
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: ShoppingScreen(),
     );
   }
 }
