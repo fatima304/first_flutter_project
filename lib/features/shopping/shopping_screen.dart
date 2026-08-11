@@ -5,7 +5,6 @@ import 'package:first_flutter_project/features/shopping/widgets/product_slider.d
 import 'package:flutter/material.dart';
 
 class ShoppingScreen extends StatefulWidget {
-  const ShoppingScreen({super.key});
 
   @override
   State<ShoppingScreen> createState() => _ShoppingScreenState();
