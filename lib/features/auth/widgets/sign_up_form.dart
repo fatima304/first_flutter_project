@@ -2,6 +2,7 @@ import 'package:first_flutter_project/features/auth/widgets/fade_page_route.dart
 import 'package:first_flutter_project/features/auth/widgets/validators.dart';
 import 'package:first_flutter_project/features/shopping/shopping_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:first_flutter_project/l10n/app_localizations.dart';
 
 class SignUpForm extends StatefulWidget {
   const SignUpForm({super.key});
@@ -24,22 +25,27 @@ class _SignUpFormState extends State<SignUpForm> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Form(
       key: formKey,
       child: Column(
         children: [
           TextFormField(
-            validator: Validators.validateFullName,
-            decoration: const InputDecoration(
-              labelText: 'Full Name',
-              border: OutlineInputBorder(),
+            validator: (value) {
+              return Validators.validateFullName(value, l10n);
+            },
+            decoration: InputDecoration(
+              labelText: l10n.fullName,
+              border: const OutlineInputBorder(),
             ),
           ),
           const SizedBox(height: 16),
           TextFormField(
-            validator: Validators.validateEmail,
-            decoration: const InputDecoration(
-              labelText: 'Email',
+            validator: (value) {
+              return Validators.validateEmail(value, l10n);
+            },
+            decoration: InputDecoration(
+              labelText: l10n.email,
               border: OutlineInputBorder(),
             ),
           ),
@@ -47,9 +53,11 @@ class _SignUpFormState extends State<SignUpForm> {
           TextFormField(
             controller: passwordController,
             obscureText: isPasswordObscured,
-            validator: Validators.validatePassword,
+            validator: (value) {
+              return Validators.validatePassword(value, l10n);
+            },
             decoration: InputDecoration(
-              labelText: 'Password',
+              labelText: l10n.password,
               border: const OutlineInputBorder(),
               suffixIcon: IconButton(
                 onPressed: () {
@@ -70,10 +78,11 @@ class _SignUpFormState extends State<SignUpForm> {
               return Validators.validateConfirmPassword(
                 value,
                 passwordController.text,
+                l10n,
               );
             },
             decoration: InputDecoration(
-              labelText: 'Confirm Password',
+              labelText: l10n.confirmPassword,
               border: const OutlineInputBorder(),
               suffixIcon: IconButton(
                 onPressed: () {
@@ -93,34 +102,32 @@ class _SignUpFormState extends State<SignUpForm> {
           ElevatedButton(
             onPressed: () {
               if (formKey.currentState!.validate()) {
-                _showSuccessDialog();
+                _showSuccessDialog(l10n);
               }
             },
-            child: const Text('Sign Up'),
+            child: Text(l10n.signUp),
           ),
         ],
       ),
     );
   }
 
-  void _showSuccessDialog() {
+  void _showSuccessDialog(AppLocalizations l10n) {
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('Success'),
-          content: const Text('Account created successfully'),
+          title: Text(l10n.success),
+          content: Text(l10n.accountCreatedSuccessfully),
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.of(context).pop();
-
                 Navigator.pushReplacement(
                   context,
-                  FadePageRoute(page:  ShoppingScreen()),
+                  FadePageRoute(page: const ShoppingScreen()),
                 );
               },
-              child: const Text('OK'),
+              child: Text(l10n.ok),
             ),
           ],
         );

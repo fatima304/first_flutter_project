@@ -1,49 +1,51 @@
-class Validators {
-  static String? validateFullName(String? value) {
-    if (value == null || value.trim().isEmpty) {
-      return 'Full name is required';
-    }
+import 'package:first_flutter_project/l10n/app_localizations.dart';
 
-    if (!RegExp(r'^[A-Z]').hasMatch(value.trim())) {
-      return 'First letter must be capital';
+class Validators {
+  static String? validateFullName(String? value, AppLocalizations l10n) {
+    if (value == null || value.trim().isEmpty) {
+      return l10n.fullNameRequired;
     }
 
     return null;
   }
 
-  static String? validateEmail(String? value) {
+  static String? validateEmail(String? value, AppLocalizations l10n) {
     if (value == null || value.trim().isEmpty) {
-      return 'Email is required';
+      return l10n.emailRequired;
     }
 
     final emailRegex = RegExp(r'^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$');
 
     if (!emailRegex.hasMatch(value.trim())) {
-      return 'Please enter a valid email';
+      return l10n.invalidEmail;
     }
 
     return null;
   }
 
-  static String? validatePassword(String? value) {
+  static String? validatePassword(String? value, AppLocalizations l10n) {
     if (value == null || value.isEmpty) {
-      return 'Password is required';
+      return l10n.passwordRequired;
     }
 
     if (value.length < 6) {
-      return 'Password must be at least 6 characters';
+      return l10n.passwordMinLength;
     }
 
     return null;
   }
 
-  static String? validateConfirmPassword(String? value, String password) {
+  static String? validateConfirmPassword(
+    String? value,
+    String password,
+    AppLocalizations l10n,
+  ) {
     if (value == null || value.isEmpty) {
-      return 'Please confirm your password';
+      return l10n.confirmPasswordRequired;
     }
 
     if (value != password) {
-      return 'Passwords do not match';
+      return l10n.passwordsDoNotMatch;
     }
 
     return null;

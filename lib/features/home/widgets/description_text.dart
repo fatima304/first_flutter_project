@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionText extends StatelessWidget {
@@ -5,8 +6,9 @@ class DescriptionText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Text(
-      'The two images are displayed',
+      l10n.imagesDisplayed,
       style: TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.bold,
