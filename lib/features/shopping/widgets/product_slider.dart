@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/core/constants/app_images.dart';
 import 'package:flutter/material.dart';
 
 class ProductSlider extends StatelessWidget {
@@ -7,9 +8,18 @@ class ProductSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageView(
       children: [
-        Image.asset('assets/images/product.png', fit: BoxFit.cover),
-        Image.network('https://picsum.photos/400/300', fit: BoxFit.cover),
-        Image.network('https://picsum.photos/401/300', fit: BoxFit.cover),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset(AppImages.berryWaffle, fit: BoxFit.cover),
+        ),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset(AppImages.berryYogurtBowl, fit: BoxFit.cover),
+        ),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset(AppImages.mixedFruitBowl, fit: BoxFit.cover),
+        ),
       ],
     );
   }

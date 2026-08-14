@@ -73,32 +73,44 @@ class AppLocalizationsAr extends AppLocalizations {
   String get shopping => 'التسوق';
 
   @override
-  String get ok => 'موافق';
+  String get ok => 'نعم';
 
   @override
-  String get product1 => 'المنتج 1';
+  String get fruityMuesli => 'موسلي بالفواكه';
 
   @override
-  String get product2 => 'المنتج 2';
+  String get quinoaFruit => 'كينوا بالفواكه';
 
   @override
-  String get product3 => 'المنتج 3';
+  String get goldenBrownWaffle => 'وافل ذهبي';
 
   @override
-  String get product4 => 'المنتج 4';
+  String get cerealBowl => 'وعاء الحبوب';
 
   @override
-  String get specialOffer1 => 'عرض خاص 1';
+  String get berryWaffle => 'وافل بالتوت';
 
   @override
-  String get specialOffer2 => 'عرض خاص 2';
+  String get freshFruitBowl => 'وعاء فواكه طازجة';
 
   @override
-  String get specialOffer3 => 'عرض خاص 3';
+  String get berryYogurtBowl => 'وعاء زبادي بالتوت';
 
   @override
-  String get specialOffer4 => 'عرض خاص 4';
+  String get mixedFruitBowl => 'وعاء فواكه مشكلة';
 
   @override
-  String get specialOffer5 => 'عرض خاص 5';
+  String get signIn => 'تسجيل الدخول';
+
+  @override
+  String get haveAccount => 'لديك حساب؟';
+
+  @override
+  String get termsAgreement => 'بالنقر على تسجيل، أنت توافق على';
+
+  @override
+  String get termsAndPolicy => 'الشروط، سياسة البيانات';
+
+  @override
+  String get signUpSubtitle => 'أنشئ حسابًا';
 }

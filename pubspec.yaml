@@ -80,7 +80,7 @@ flutter:
   fonts:
     - family: Suwannaphum
       fonts:
-        - asset: assets\fonts\Suwannaphum\Suwannaphum-Regular.ttf
+        - asset: assets/fonts/Suwannaphum/Suwannaphum-Regular.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

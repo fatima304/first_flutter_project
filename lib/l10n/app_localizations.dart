@@ -230,59 +230,83 @@ abstract class AppLocalizations {
   /// **'OK'**
   String get ok;
 
-  /// No description provided for @product1.
+  /// No description provided for @fruityMuesli.
   ///
   /// In en, this message translates to:
-  /// **'Product 1'**
-  String get product1;
+  /// **'Fruity Muesli'**
+  String get fruityMuesli;
 
-  /// No description provided for @product2.
+  /// No description provided for @quinoaFruit.
   ///
   /// In en, this message translates to:
-  /// **'Product 2'**
-  String get product2;
+  /// **'Quinoa Fruit'**
+  String get quinoaFruit;
 
-  /// No description provided for @product3.
+  /// No description provided for @goldenBrownWaffle.
   ///
   /// In en, this message translates to:
-  /// **'Product 3'**
-  String get product3;
+  /// **'Golden Brown Waffle'**
+  String get goldenBrownWaffle;
 
-  /// No description provided for @product4.
+  /// No description provided for @cerealBowl.
   ///
   /// In en, this message translates to:
-  /// **'Product 4'**
-  String get product4;
+  /// **'Cereal Bowl'**
+  String get cerealBowl;
 
-  /// No description provided for @specialOffer1.
+  /// No description provided for @berryWaffle.
   ///
   /// In en, this message translates to:
-  /// **'Special Offer 1'**
-  String get specialOffer1;
+  /// **'Berry Waffle'**
+  String get berryWaffle;
 
-  /// No description provided for @specialOffer2.
+  /// No description provided for @freshFruitBowl.
   ///
   /// In en, this message translates to:
-  /// **'Special Offer 2'**
-  String get specialOffer2;
+  /// **'Fresh Fruit Bowl'**
+  String get freshFruitBowl;
 
-  /// No description provided for @specialOffer3.
+  /// No description provided for @berryYogurtBowl.
   ///
   /// In en, this message translates to:
-  /// **'Special Offer 3'**
-  String get specialOffer3;
+  /// **'Berry Yogurt Bowl'**
+  String get berryYogurtBowl;
 
-  /// No description provided for @specialOffer4.
+  /// No description provided for @mixedFruitBowl.
   ///
   /// In en, this message translates to:
-  /// **'Special Offer 4'**
-  String get specialOffer4;
+  /// **'Mixed Fruit Bowl'**
+  String get mixedFruitBowl;
 
-  /// No description provided for @specialOffer5.
+  /// No description provided for @signIn.
   ///
   /// In en, this message translates to:
-  /// **'Special Offer 5'**
-  String get specialOffer5;
+  /// **'Sign In'**
+  String get signIn;
+
+  /// No description provided for @haveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Have an account?'**
+  String get haveAccount;
+
+  /// No description provided for @termsAgreement.
+  ///
+  /// In en, this message translates to:
+  /// **'By clicking Register, you agree to our'**
+  String get termsAgreement;
+
+  /// No description provided for @termsAndPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms, Data Policy'**
+  String get termsAndPolicy;
+
+  /// No description provided for @signUpSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create account'**
+  String get signUpSubtitle;
 }
 
 class _AppLocalizationsDelegate

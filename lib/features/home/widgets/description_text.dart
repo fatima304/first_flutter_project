@@ -9,10 +9,11 @@ class DescriptionText extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     return Text(
       l10n.imagesDisplayed,
-      style: TextStyle(
+      style: const TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.bold,
         color: Color(0xFF1A237E),
+        fontFamily: 'Suwannaphum',
       ),
     );
   }

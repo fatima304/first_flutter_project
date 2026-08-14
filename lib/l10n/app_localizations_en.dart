@@ -75,29 +75,41 @@ class AppLocalizationsEn extends AppLocalizations {
   String get ok => 'OK';
 
   @override
-  String get product1 => 'Product 1';
+  String get fruityMuesli => 'Fruity Muesli';
 
   @override
-  String get product2 => 'Product 2';
+  String get quinoaFruit => 'Quinoa Fruit';
 
   @override
-  String get product3 => 'Product 3';
+  String get goldenBrownWaffle => 'Golden Brown Waffle';
 
   @override
-  String get product4 => 'Product 4';
+  String get cerealBowl => 'Cereal Bowl';
 
   @override
-  String get specialOffer1 => 'Special Offer 1';
+  String get berryWaffle => 'Berry Waffle';
 
   @override
-  String get specialOffer2 => 'Special Offer 2';
+  String get freshFruitBowl => 'Fresh Fruit Bowl';
 
   @override
-  String get specialOffer3 => 'Special Offer 3';
+  String get berryYogurtBowl => 'Berry Yogurt Bowl';
 
   @override
-  String get specialOffer4 => 'Special Offer 4';
+  String get mixedFruitBowl => 'Mixed Fruit Bowl';
 
   @override
-  String get specialOffer5 => 'Special Offer 5';
+  String get signIn => 'Sign In';
+
+  @override
+  String get haveAccount => 'Have an account?';
+
+  @override
+  String get termsAgreement => 'By clicking Register, you agree to our';
+
+  @override
+  String get termsAndPolicy => 'Terms, Data Policy';
+
+  @override
+  String get signUpSubtitle => 'Create account';
 }

@@ -20,45 +20,53 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
     final l10n = AppLocalizations.of(context)!;
 
     final productNames = {
-      'product1': l10n.product1,
-      'product2': l10n.product2,
-      'product3': l10n.product3,
-      'product4': l10n.product4,
+      'fruityMuesli': l10n.fruityMuesli,
+      'quinoaFruit': l10n.quinoaFruit,
+      'goldenBrownWaffle': l10n.goldenBrownWaffle,
+      'cerealBowl': l10n.cerealBowl,
     };
 
     final offerTitles = {
-      'specialOffer1': l10n.specialOffer1,
-      'specialOffer2': l10n.specialOffer2,
-      'specialOffer3': l10n.specialOffer3,
-      'specialOffer4': l10n.specialOffer4,
-      'specialOffer5': l10n.specialOffer5,
+      'berryWaffle': l10n.berryWaffle,
+      'freshFruitBowl': l10n.freshFruitBowl,
+      'berryYogurtBowl': l10n.berryYogurtBowl,
+      'mixedFruitBowl': l10n.mixedFruitBowl,
     };
+
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.shopping)),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text(l10n.shopping),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+      ),
       body: SingleChildScrollView(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 16),
             Text(
               l10n.ourProducts,
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             SizedBox(
-              width: screenWidth * 0.9,
+              width: screenWidth,
               height: sliderHeight,
               child: const ProductSlider(),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 24),
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              padding: const EdgeInsets.all(12),
               itemCount: products.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
+                crossAxisSpacing: 12,
+                mainAxisSpacing: 12,
                 childAspectRatio: 0.75,
               ),
               itemBuilder: (context, index) {
@@ -72,7 +80,7 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
             const SizedBox(height: 24),
             Text(
               l10n.hotOffers,
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             ListView.builder(
@@ -81,12 +89,8 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
               itemCount: hotOffers.length,
               itemBuilder: (context, index) {
                 final offer = hotOffers[index];
-
                 return Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 6,
-                  ),
+                  padding: const EdgeInsets.only(bottom: 12),
                   child: HotOfferItem(
                     title: offerTitles[offer['titleKey']!]!,
                     imageUrl: offer['image']!,
@@ -94,6 +98,7 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
                 );
               },
             ),
+            const SizedBox(height: 24),
           ],
         ),
       ),
