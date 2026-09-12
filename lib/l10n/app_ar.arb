@@ -2,9 +2,12 @@
   "@@locale": "ar",
   "appTitle": "مشروعي الأول",
   "signUp": "إنشاء حساب",
+  "login": "تسجيل الدخول",
   "fullName": "الاسم الكامل",
   "email": "البريد الإلكتروني",
   "password": "كلمة المرور",
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
   "confirmPassword": "تأكيد كلمة المرور",
   "ourProducts": "منتجاتنا",
   "hotOffers": "العروض الساخنة",
@@ -34,5 +37,6 @@
   "termsAgreement": "بالنقر على تسجيل، أنت توافق على",
   "termsAndPolicy": "الشروط، سياسة البيانات",
   "signUpSubtitle": "أنشئ حسابًا",
+  "signInSubtitle": "تسجيل الدخول إلى حسابك",
     "ok": "نعم"
 }

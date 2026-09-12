@@ -2,9 +2,12 @@
   "@@locale": "en",
   "appTitle": "My First Project",
   "signUp": "Sign Up",
+  "login": "Login",
   "fullName": "Full Name",
   "email": "Email",
   "password": "Password",
+  "dontHaveAccount": "Don't have an account?",
+  "alreadyHaveAccount": "Already have an account?",
   "confirmPassword": "Confirm Password",
   "ourProducts": "Our Products",
   "hotOffers": "Hot Offers",
@@ -33,5 +36,6 @@
   "haveAccount": "Have an account?",
   "termsAgreement": "By clicking Register, you agree to our",
   "termsAndPolicy": "Terms, Data Policy",
-  "signUpSubtitle": "Create account"
+  "signUpSubtitle": "Create account",
+  "signInSubtitle": "Sign in to your account"
 }

@@ -15,6 +15,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signUp => 'Sign Up';
 
   @override
+  String get login => 'Login';
+
+  @override
   String get fullName => 'Full Name';
 
   @override
@@ -22,6 +25,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get password => 'Password';
+
+  @override
+  String get dontHaveAccount => 'Don\'t have an account?';
+
+  @override
+  String get alreadyHaveAccount => 'Already have an account?';
 
   @override
   String get confirmPassword => 'Confirm Password';
@@ -112,4 +121,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get signUpSubtitle => 'Create account';
+
+  @override
+  String get signInSubtitle => 'Sign in to your account';
 }

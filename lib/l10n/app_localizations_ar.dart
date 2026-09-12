@@ -15,6 +15,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get signUp => 'إنشاء حساب';
 
   @override
+  String get login => 'تسجيل الدخول';
+
+  @override
   String get fullName => 'الاسم الكامل';
 
   @override
@@ -22,6 +25,12 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get password => 'كلمة المرور';
+
+  @override
+  String get dontHaveAccount => 'ليس لديك حساب؟';
+
+  @override
+  String get alreadyHaveAccount => 'هل لديك حساب بالفعل؟';
 
   @override
   String get confirmPassword => 'تأكيد كلمة المرور';
@@ -113,4 +122,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get signUpSubtitle => 'أنشئ حسابًا';
+
+  @override
+  String get signInSubtitle => 'تسجيل الدخول إلى حسابك';
 }

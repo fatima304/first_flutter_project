@@ -1,8 +1,10 @@
+import 'package:first_flutter_project/features/auth/login_screen.dart';
 import 'package:first_flutter_project/features/auth/widgets/custom_button.dart';
 import 'package:first_flutter_project/features/auth/widgets/custom_text_form_field.dart';
 import 'package:first_flutter_project/features/auth/widgets/fade_page_route.dart';
 import 'package:first_flutter_project/features/auth/widgets/validators.dart';
 import 'package:first_flutter_project/features/shopping/shopping_screen.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_project/l10n/app_localizations.dart';
 
@@ -103,6 +105,15 @@ class _SignUpFormState extends State<SignUpForm> {
                 style: TextStyle(color: Colors.grey[600], fontSize: 14),
                 children: [
                   TextSpan(
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginScreen(),
+                          ),
+                        );
+                      },
                     text: l10n.signIn,
                     style: const TextStyle(
                       color: Color(0xFF6A1B9A),
