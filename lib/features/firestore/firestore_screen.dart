@@ -1,23 +1,21 @@
-import 'package:first_flutter_project/features/auth/manager/cubit/auth/auth_cubit.dart';
-import 'package:first_flutter_project/features/auth/widgets/login_form.dart';
-import 'package:first_flutter_project/l10n/app_localizations.dart';
+import 'package:first_flutter_project/features/auth/manager/cubit/firestore/firestore_cubit.dart';
+import 'package:first_flutter_project/features/auth/widgets/user_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class FirestoreScreen extends StatelessWidget {
+  const FirestoreScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
     return BlocProvider(
-      create: (context) => AuthCubit(),
+      create: (context) => FirestoreCubit(),
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: Text(
-            l10n.login,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          title: const Text(
+            'User Information',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           elevation: 0,
           backgroundColor: Colors.white,
@@ -29,11 +27,11 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                l10n.signInSubtitle,
+                'Enter your details to save to Firestore',
                 style: TextStyle(fontSize: 14, color: Colors.grey[600]),
               ),
               const SizedBox(height: 32),
-              LoginForm(),
+              const UserForm(),
             ],
           ),
         ),

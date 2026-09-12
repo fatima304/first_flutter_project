@@ -1,5 +1,5 @@
-import 'package:first_flutter_project/features/auth/manager/cubit/auth_cubit.dart';
-import 'package:first_flutter_project/features/auth/manager/cubit/auth_states.dart';
+import 'package:first_flutter_project/features/auth/manager/cubit/auth/auth_cubit.dart';
+import 'package:first_flutter_project/features/auth/manager/cubit/auth/auth_states.dart';
 import 'package:first_flutter_project/features/auth/sign_up_screen.dart';
 import 'package:first_flutter_project/features/auth/widgets/custom_button.dart';
 import 'package:first_flutter_project/features/auth/widgets/custom_text_form_field.dart';

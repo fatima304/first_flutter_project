@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/features/auth/manager/cubit/auth_cubit.dart';
+import 'package:first_flutter_project/features/auth/manager/cubit/auth/auth_cubit.dart';
 import 'package:first_flutter_project/features/auth/widgets/sign_up_form.dart';
 import 'package:first_flutter_project/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';

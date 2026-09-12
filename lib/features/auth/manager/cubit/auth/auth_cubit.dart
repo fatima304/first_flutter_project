@@ -1,4 +1,4 @@
-import 'package:first_flutter_project/features/auth/manager/cubit/auth_states.dart';
+import 'package:first_flutter_project/features/auth/manager/cubit/auth/auth_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
