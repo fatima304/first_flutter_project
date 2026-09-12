@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "589120674562",
+    "project_id": "beauty-app-7e7aa",
+    "storage_bucket": "beauty-app-7e7aa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589120674562:android:95168d424d43fcc9d8801b",
+        "android_client_info": {
+          "package_name": "com.example.advanced_playlist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSQVCybB8P_EytHlHn_6pEWYhFVreLWDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589120674562:android:eff0e640e79239aed8801b",
+        "android_client_info": {
+          "package_name": "com.example.advanced_playlist.prod"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSQVCybB8P_EytHlHn_6pEWYhFVreLWDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589120674562:android:7e1a6bcc92193029d8801b",
+        "android_client_info": {
+          "package_name": "com.example.first_flutter_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSQVCybB8P_EytHlHn_6pEWYhFVreLWDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,9 +5,11 @@ class CustomElevatedButton extends StatelessWidget {
     super.key,
     required this.text,
     required this.onPressed,
+    required this.isLoading,
   });
 
   final String text;
+  final bool isLoading;
   final VoidCallback onPressed;
 
   @override
@@ -21,10 +23,19 @@ class CustomElevatedButton extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 0,
       ),
-      child: Text(
-        text,
-        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-      ),
+      child: isLoading
+          ? const SizedBox(
+              width: 20,
+              height: 20,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                color: Colors.white,
+              ),
+            )
+          : Text(
+              text,
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            ),
     );
   }
 }
