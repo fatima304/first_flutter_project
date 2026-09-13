@@ -136,3 +136,17 @@ This project uses Firebase for authentication and data storage. To run this proj
 ## Repository
 
 https://github.com/fatima304/first_flutter_project
+
+## Screenshots
+<img width="1080" height="2340" alt="Screenshot_1789254375" src="https://github.com/user-attachments/assets/5b07bf5b-6d5b-4862-8e6a-633f30f68aea" />
+<img width="1080" height="2340" alt="Screenshot_1789254366" src="https://github.com/user-attachments/assets/46af5d51-9a2f-4518-9e59-fe44a9587c07" />
+<img width="1080" height="2340" alt="Screenshot_1789253981" src="https://github.com/user-attachments/assets/fda34dc6-5877-461f-b8a5-3f5e7e2955e4" />
+<img width="1080" height="2340" alt="Screenshot_1789253977" src="https://github.com/user-attachments/assets/15425713-1eb9-445b-ac8c-917a08154cf3" />
+<img width="1080" height="2340" alt="Screenshot_1789253921" src="https://github.com/user-attachments/assets/c3c9aab4-106e-4045-b41b-53640c41182c" />
+<img width="1080" height="2340" alt="Screenshot_1786663430" src="https://github.com/user-attachments/assets/87571ac2-3665-4b2f-aceb-3c2ad1219506" />
+<img width="1080" height="2340" alt="Screenshot_1786663108" src="https://github.com/user-attachments/assets/d14fbaf4-9f5c-48ad-a5c7-d5b1a3f32d4c" />
+<img width="1080" height="2340" alt="Screenshot_1786663096" src="https://github.com/user-attachments/assets/e1efcee5-8560-48c7-bf4c-445d592c7582" />
+<img width="1080" height="2340" alt="Screenshot_1786642285" src="https://github.com/user-attachments/assets/e7c3d491-effb-4395-9ea3-62cde035db0d" />
+<img width="1080" height="2340" alt="Screenshot_1786642252" src="https://github.com/user-attachments/assets/ebacfd16-3934-4580-abb1-425d5fa85346" />
+<img width="1080" height="2340" alt="Screenshot_1786642215" src="https://github.com/user-attachments/assets/d5f9160f-f6fb-4128-8736-c3a16c9fa1ae" />
+<img width="1080" height="2340" alt="Screenshot_1789254388" src="https://github.com/user-attachments/assets/a14c432c-efc0-42f6-a550-68e4a12a0dc9" />
